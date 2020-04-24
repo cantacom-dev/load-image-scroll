@@ -1,0 +1,34 @@
+Velocity
+
+Velocity é um template engine baseado em Java e podemos usar essa ferramenta para desenvolvimento web assim como jsp, freemarker, entre outras engines. 
+Sua extensão é dada por ".vm". Ou seja, podemos usar velocity dentro do html e dele puxar requisições que serão feitas pelos usuários.
+
+Para criar um arquivo de texto e colocar .vm.
+Exemplo de criação de uma págian em velocity: "minhaPagina.vm"
+
+Para comentar usamos ##:
+## Esse é um exemplo de linha única de comentário
+
+Para comentar múltiplas linhas usamos: #*TEXTO*#
+#*
+  Esse é um exemplo de 
+  múltiplas linhas d
+  e comentário
+*#
+
+Para referenciar uma variável dentro do htmlm usamos sempre $ (cifrão) antes do nome da variável:
+$variável1
+$variável2
+
+Para declarar variáveis em apache velocity é preciso utilizar o elemento #set:
+#set ($variavel = "alguma coisa")
+
+No liferay, podemos puxar o nome de uma estrutura a partir de uma decalarção de variável.
+Se tivermos uma estrutura criada com o nome (name_space) de formulario e nele conter os inputs cada qual com 
+seu name_space respectivo, podemos selecionar esses conteúdos para serem inseridos nos módulos criados.
+Por exemplo, digamos que a estrutura pai contém, como já citado, o nome de "formulario" e dentro dele há um campo para inserir nome (com name_space nome_do_usuario), podemos pegar esse campo, selecionando da estrutura pai até a estrutura filha.
+Ao selecionar o name da estrutura, deve-se colocar "$" antes. 
+
+Ex: #set ($addNome = $formulario.nome_do_usuario)
+
+Dessa maneira, a variável $addNome passa a conter os valores que serão selecionados no campo de nome do usuário e será adicinado dentro ho html dependendo do nome que for atribuído a cada usuário.
