@@ -1,3 +1,13 @@
+/*!
+ * Load image scroll
+ * version: 1.0
+ * Dev Thiago Scomparin
+ * Copyright (c) 2020 Cantacom
+ * Examples and documentation at: https://github.com/cantacom-dev/load-image-scroll/
+ * Project repository: https://github.com/cantacom-dev/load-image-scroll/
+ */
+
+
 let loadimages = {
     selector: function (selector) {
 
