@@ -21,5 +21,9 @@ Esse script é responsável pelo carregamento de imagens ao executar o scroll do
 loadimages.selector('.my-selector'); 
 ```
 
-> E o último passo é sinalizar para o script os elementos no documento HTML. Vamos adicionar aos elementos o atributo `[class]` usando a classe declarada em nosso método, sendo ela: `.my-selector`. Também vamos adicionar o atributo `[data-src]`, neste atributo vamos declarar o endereço da nossa imagem. 
+> E o último passo é sinalizar para o script os elementos no documento HTML. Vamos adicionar aos elementos o atributo `[class]` usando a classe declarada em nosso método, sendo ela: `.my-selector`. Também vamos adicionar o atributo `[data-src]`, neste atributo vamos declarar o endereço da nossa imagem, exemplo `http://www.host.com/img/my-image.png`. 
+
+```HTML
+<img class="my-selector" data-src="http://www.host.com/img/my-image.png" alt="Imagem">
+```
 
