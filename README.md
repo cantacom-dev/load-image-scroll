@@ -7,14 +7,14 @@ Esse script é responsável pelo carregamento de imagens ao executar o scroll do
 ## Como implementar
 
 
-> O primeiro passo é chamar as dependências
+> O primeiro passo é chamar as dependências:
 
 ```HTML
 <script type="text/javascript" src="src/load-image-scroll.js"></script>
 ```
 
-> O segundo passo é invocar o método escolhendo um selector.
+> O segundo passo é invocar o método escolhendo um selector:
 
 ```JAVASCRIPT
-loadimages.selector('.lazy-load'); 
+loadimages.selector('.my-selector'); 
 ```
