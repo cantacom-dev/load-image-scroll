@@ -1,7 +1,7 @@
 # load-image-scroll
 
 
-Esse script é responsável pelo carregamento de imagens ao executar o scroll do navegador. As imagens são carregadas somente quando forem visualizadas pelo navegador. 
+Esse script é responsável pelo carregamento de imagens ao executar o scroll do browser. As imagens são carregadas somente quando estiverem dentro da área de visualização.
 
 
 ## Como implementar
