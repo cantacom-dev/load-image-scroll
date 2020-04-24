@@ -34,7 +34,7 @@ Exemplos:
 ```HTML
 <picture class="my-selector">
     <source data-src="http://www.host.com/img/my-image.jpg" media="(max-width: 768px)" srcset="">
-    <img data-src="http://www.host.com/img/my-image.jpg" alt="" src="">
+    <img data-src="http://www.host.com/img/my-image.jpg" alt="Imagem" src="">
 </picture>
 ```
 
